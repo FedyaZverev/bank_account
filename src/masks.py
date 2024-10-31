@@ -1,5 +1,7 @@
 from typing import Any
 
+
+
 def get_mask_card_number(card_number: Any = str) -> str:
     """Функция принимает на входе номер карты и возвращает маску"""
     if len(card_number) != 16:
