@@ -15,7 +15,7 @@ from datetime import datetime
 
 def sort_by_date(transactions, reverse=True):
     """
-    Сортирует список словарей по дате.
+    Сортирует список словарей по  дате.
 
     :param transactions: Список словарей, каждый из которых содержит информацию о транзакции.
     :param reverse: Порядок сортировки. True для сортировки по убыванию (по умолчанию), False для сортировки по возрастанию.
