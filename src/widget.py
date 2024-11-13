@@ -1,7 +1,9 @@
-from masks import get_mask_account, get_mask_card_number
+from typing import Any
+
+from src.masks import get_mask_account, get_mask_card_number
 
 
-def mask_account_card(word: str) -> str:
+def mask_account_card(word: Any = str) -> str:
     """Функция маскирует номер карты/счета"""
     word_digit = ""
     word_alpha = ""
@@ -19,6 +21,6 @@ def mask_account_card(word: str) -> str:
     return "Вы ввели неверный формат"
 
 
-def get_date(time: str) -> str:
+def get_date(time: Any = str) -> str:
     """Функция принимает строку и возвращает значение в формате ДД.ММ.ГГГГ"""
     return f"{time[8:10]}.{time[5:7]}.{time[0:4]}"
