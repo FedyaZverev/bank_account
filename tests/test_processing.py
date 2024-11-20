@@ -25,7 +25,7 @@ def test_filter_state(test_filter):
      []),])
 
 
-def test_state_filter(transactions, state, expected):
+def test_state_filter(transactions: list, state: str, expected: list) -> None:
     assert filter_by_state(transactions, state) == expected
 
 
