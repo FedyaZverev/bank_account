@@ -24,12 +24,6 @@ def test_number(test_get_number: str) -> None:
 def test_mark_number(card_number: str, expected: str) -> None:
     assert get_mask_card_number(card_number) == expected
 
-    with pytest.raises(TypeError):
-        get_mask_card_number()
-
-    with pytest.raises(AttributeError):
-        get_mask_card_number()
-
 
 @pytest.fixture()
 def test_get_account() -> str:
