@@ -1,9 +1,9 @@
+import datetime
 import json
 import os
 
 import requests
 from dotenv import load_dotenv
-import datetime
 
 load_dotenv()
 api_key = os.getenv("API_KEY")

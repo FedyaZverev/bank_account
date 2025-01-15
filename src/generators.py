@@ -43,4 +43,4 @@ def card_number_generator(start, stop):
     for num in range(start_num, stop_num + 1):
         """Форматируем номер карты в строку с пробелами"""
         card_number = f"{num:016d}"
-        yield " ".join([card_number[i : i + 4] for i in range(0, 16, 4)])
+        yield " ".join([card_number[i:i + 4] for i in range(0, 16, 4)])
