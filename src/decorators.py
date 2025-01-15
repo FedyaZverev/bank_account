@@ -5,6 +5,7 @@ def log(filename=None):
     """
     log, который автоматически логирует начало и конец выполнения функции,
     а также ее результаты или возникшие ошибки."""
+
     def my_decorator(func):
         @wraps(func)
         def wrapper(*args, **kwargs):
