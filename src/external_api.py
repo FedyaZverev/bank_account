@@ -27,11 +27,11 @@ def transactions_amount(transactions: dict) -> str | list:
             result = response.text
             json_dict = json.loads(result)
             end_amount = json_dict.get("result")
-            return f"Сумма транзакции: {float(end_amount)} RUB"
+            return f"{float(end_amount)} RUB"
         else:
             return f"Ошибка {status_code}!"
     elif from_value == "RUB":
-        return f"Сумма транзакции: {float(amount)} RUB"
+        return f"{float(amount)} RUB"
     else:
         return []
 
