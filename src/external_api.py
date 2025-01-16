@@ -9,7 +9,7 @@ load_dotenv()
 api_key = os.getenv("API_KEY")
 
 
-def transactions_amount(transactions: dict) -> str | list:
+def transactions_amount(transactions: dict) -> int:
     """Функция которая принимает на вход транзакцию и возвращает сумму транзакции (amount) в рублях"""
     now_data = datetime.datetime.now()
     from_value = transactions["operationAmount"]["currency"]["code"]
