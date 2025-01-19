@@ -1,6 +1,7 @@
 import datetime
 import json
 import os
+from typing import List, Any
 
 import requests
 from dotenv import load_dotenv
@@ -9,7 +10,7 @@ load_dotenv()
 api_key = os.getenv("API_KEY")
 
 
-def transactions_amount(transactions: dict) -> int:
+def transactions_amount(transactions: dict) -> float | int | list[Any]:
     """Функция которая принимает на вход транзакцию и возвращает сумму транзакции (amount) в рублях"""
     now_data = datetime.datetime.now()
     from_value = transactions["operationAmount"]["currency"]["code"]
@@ -26,12 +27,12 @@ def transactions_amount(transactions: dict) -> int:
         if status_code == 200:
             result = response.text
             json_dict = json.loads(result)
-            end_amount = json_dict.get("result")
-            return f"{float(end_amount)} RUB"
+            end_amount = float(json_dict.get('result'))
+            return float(end_amount)
         else:
-            return f"Ошибка {status_code}!"
+            return status_code
     elif from_value == "RUB":
-        return f"{float(amount)} RUB"
+        return float(amount)
     else:
         return []
 
