@@ -1,7 +1,7 @@
 import datetime
 import json
 import os
-from typing import List, Any
+from typing import Any, List
 
 import requests
 from dotenv import load_dotenv
@@ -27,7 +27,7 @@ def transactions_amount(transactions: dict) -> float | int | list[Any]:
         if status_code == 200:
             result = response.text
             json_dict = json.loads(result)
-            end_amount = float(json_dict.get('result'))
+            end_amount = float(json_dict.get("result"))
             return float(end_amount)
         else:
             return status_code
