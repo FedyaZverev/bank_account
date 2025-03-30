@@ -1,0 +1,25 @@
+my_function ok
+my_function error: division by zero. Inputs: (1, 0), {}
+my_function error: unsupported operand type(s) for /: 'int' and 'list'. Inputs: (1, []),
+my_function error: unsupported operand type(s) for /: 'int' and 'str'. Inputs: (1, ''), {}
+my_function error: unsupported operand type(s) for /: 'int' and 'dict'. Inputs: (1, {1: 3}), {}
+my_function error: unsupported operand type(s) for /: 'int' and 'dict'. Inputs: (1, {'name': 3}), {}
+my_function error: unsupported operand type(s) for /: 'int' and 'dict'. Inputs: (1, {'name': 3, 'k': 3}), {}
+my_function error: unsupported operand type(s) for /: 'int' and 'dict'. Inputs: (1, {'name': 3, 'k': 3}), {}
+my_function error: unsupported operand type(s) for /: 'int' and 'dict'. Inputs: (1, {'name': 3, 'k': 3}), {}
+my_function error: unsupported operand type(s) for /: 'int' and 'dict'. Inputs: (1, {'name': 3, 'k': 3}), {}
+my_function error: unsupported operand type(s) for /: 'int' and 'dict'. Inputs: (1, {'name': 3, 'k': 3}), {}
+my_function error: unsupported operand type(s) for /: 'int' and 'dict'. Inputs: (1, {'name': 3, 'k': 3}), {}
+my_function error: unsupported operand type(s) for /: 'int' and 'dict'. Inputs: (1, {'name': 3, 'k': 1}), {}
+my_function error: unsupported operand type(s) for /: 'int' and 'dict'. Inputs: (1, {'name': 3, 'k': 1}), {}
+my_function error: unsupported operand type(s) for /: 'int' and 'dict'. Inputs: (1, {'name': 3, 'k': 1}), {}
+my_function error: unsupported operand type(s) for /: 'int' and 'dict'. Inputs: (1, {'name': 3, 'k': 1}), {}
+my_function error: unsupported operand type(s) for /: 'int' and 'dict'. Inputs: (1, {'name': 10, 'k': 1}), {}
+my_function error: unsupported operand type(s) for /: 'int' and 'dict'. Inputs: (1, {'name': 10, 'k': 1}), {}
+my_function ok
+my_function ok
+my_function ok
+my_function ok
+my_function ok
+my_function ok
+my_function ok
